@@ -2,6 +2,10 @@
 
 - Removed support for deprecated `webpack.plugins` config.
 
+**Added:**
+
+- Added a `reload` option to [Express middleware](https://github.com/insin/nwb/blob/next/docs/Middleware.md#middlewareexpress-options-object) to enable reloading the page if Hot Module Reloading is unsuccessful [[#168](https://github.com/insin/nwb/issues/168)]
+
 **Changed:**
 
 - Changed `babel-plugin-transform-runtime` configuration to make use of new `moduleName` config; Webpack module resolution no longer uses a blanket fallback to nwb's `node_modules/` for serving and builds.
